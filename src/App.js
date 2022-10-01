@@ -13,8 +13,18 @@ import Settings from "./pages/Settings";
 import PagesActive from "./pages/PagesActive";
 
 import Logout from "./pages/Logout";
+
 import logo from "./img/logo-01 1.svg"
 import logoHome from "./img/Home.svg"
+import options from "./img/Options.svg"
+import logoLoc from "./img/Location.svg"
+import logoAnalys from "./img/pie-chart 1.svg"
+import logoMonth from "./img/calendar (1) 1.svg"
+import logoMenu from "./img/Buttons.svg"
+import searchIMG from "./img/Search.svg"
+
+
+
 import * as PropTypes from "prop-types";
 
 PagesActive.propTypes = {
@@ -103,7 +113,31 @@ export default function App() {
           <li><Link className="homePad" to="/Logout"><img className="logoHomeImg" src={logoHome} alt=""/><span
             className="textMenu">Logout</span></Link></li>
         </ul>
-        <Routes>
+      </div>
+      <div className="mainBody">
+        <div className="header">
+          <div className="sort">
+            <img className="logoHeaderIMG" src={logoLoc} alt=""/>
+            <div className="textHeaderSort">San Francisco, California</div>
+            <img className="optionsIMG" src={options} alt=""/>
+            <img className="logoHeaderIMG" src={logoAnalys} alt=""/>
+            <div className="textHeaderSort">Analysis</div>
+            <img className="optionsIMG" src={options} alt=""/>
+            <img className="logoHeaderIMG" src={logoMonth} alt=""/>
+            <div className="textHeaderSort">Monthly</div>
+            <img className="optionsIMG" src={options} alt=""/>
+          </div>
+          <div className="siteSearch">
+            <form style={{display:"flex", padding:"12px"}}>
+              <img className="searchImg" src={searchIMG} alt="" style={{marginRight:"12px"}}></img>
+              <input className="Search" type="text" value="Search for anything…" placeholder="Search" autoFocus/>
+            </form>
+          </div>
+          <img className="logoMenu" src={logoMenu} alt=""/>
+          <div className="profileImage"></div>
+        </div>
+        <div className="bodyRoutes">
+          <Routes>
           <Route path="/home" element={<HomePage/>}/>
           <Route path="/Explore" element={<Explore/>}/>
           <Route path="/Saved" element={<Saved/>}/>
@@ -112,6 +146,9 @@ export default function App() {
           <Route path="/Settings" element={<Settings/>}/>
           <Route path="/Logout" element={<Logout/>}/>
         </Routes>
+        </div>
+
+
       </div>
     </div>
   )}

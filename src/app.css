@@ -23,6 +23,7 @@ html,body{
     height: 100%;
     width: 100%;
     font-size: 100%;
+    max-width: 1440px;
     line-height: 1;
     font-size: 20px;
     -ms-text-size-adjust: 100%;
@@ -42,10 +43,12 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 .bodyBG{
-    background-color: lightgray;
+    background: #F2F2F2;
+    display: flex;
 }
 .logoTop{
     margin: auto;
+    margin-top: 33px;
     width:186.87px;
     height:45.63px;
 
@@ -111,4 +114,62 @@ display: flex;
     font-weight: bold;
     color: black
 
+}
+
+/*------------------------------------mainbody---------------------*/
+.mainBody{
+    width: 1072px;
+    height: auto;
+    margin: 0px 0px 0px 32px;
+}
+.header{
+    display: flex;
+    margin: 32px 0px 0px 0px;
+}
+.sort{
+    display: flex;
+    margin-right: 62px;
+}
+.textHeaderSort{
+    margin: 17px 7px 0px 12px;
+    font-size: 14px;
+}
+.optionsIMG{
+    width: 16px;
+    height: 16px;
+    margin: 17px 16px 0px 0px;
+}
+
+.logoHeaderIMG{
+    width: 24px;
+    height: 24px;
+    margin: 12px 0px 0px 0px;
+}
+
+.siteSearch{
+    width: 385px;
+    height: 48px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.Search{
+    width: 338px;
+    height: 24px;
+    font-size: 14px;
+
+}
+.searchImg{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.logoMenu{
+    height: 48px;
+    width: 48px;
+}
+
+.bodyRoutes{
+    margin: 107px 32px 0px 0px;
 }
