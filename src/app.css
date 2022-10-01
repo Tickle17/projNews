@@ -1,0 +1,114 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 20px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+.bodyBG{
+    background-color: lightgray;
+}
+.logoTop{
+    margin: auto;
+    width:186.87px;
+    height:45.63px;
+
+}
+
+.leftMenu{
+    background-color: white;
+    width: 304px;
+    height: 1024px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.pages{
+    margin: 33.37px 0px 0px 0px;
+    width: 272px;
+    height: 472px;
+}
+
+li{
+    height: 56px;
+    width: 272px;
+    margin: 0px 12px 0px 16px;
+    padding: 16px;
+    display: flex;
+}
+.homePad{
+    margin: 2px 0px 0px 0px;
+    display: flex;
+}
+
+.homePadActive{
+    background-color: rgba(80, 62, 157, 0.4);
+    border-radius: 10px;
+
+}
+
+
+.homePad.homePadActive:hover {
+    background-color: rgba(80, 62, 157, 0.5);
+}
+
+
+.homePad:hover{
+    background-color: rgba(80, 62, 157, 0.3);
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.linkItem{
+display: flex;
+}
+
+
+.logoHomeImg{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.textMenu{
+    font-size: 16px;
+    padding: 5px 16px 0px 24px;
+    font-weight: bold;
+    color: black
+
+}
