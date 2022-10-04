@@ -23,9 +23,12 @@ import logoMonth from "./img/calendar (1) 1.svg"
 import logoMenu from "./img/Buttons.svg"
 import searchIMG from "./img/Search.svg"
 
-
-
 import * as PropTypes from "prop-types";
+
+
+
+
+
 
 PagesActive.propTypes = {
   active: PropTypes.bool,

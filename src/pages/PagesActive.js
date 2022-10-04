@@ -4,31 +4,35 @@ import React from "react";
 
 export default function PagesActive(props) {
   return <>
-    <li className={props.active ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick}>
-      <Link className="linkItem"  to="/home">
+    <Link className="linkItem"  to="/home">
+      <li className={props.active ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick}>
         <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Home</span>
-      </Link>
+          <span className="textMenu">Home</span>
+
     </li>
-    <li className={props.active2 ? "homePadActive " + "homePad" : "homePad" } onClick={props.onClick2}>
-      <Link className="linkItem"to="/Explore">
-        <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Explore</span></Link></li>
+  </Link>
+    <Link className="linkItem"to="/Explore">
+      <li className={props.active2 ? "homePadActive " + "homePad" : "homePad" } onClick={props.onClick2}>
+          <img className="logoHomeImg" src={logoHome} alt=""/>
+            <span className="textMenu">Explore</span></li></Link>
+  <Link className="linkItem"  to="/Saved">
     <li className={props.active3 ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick3}>
-      <Link className="linkItem"  to="/Saved">
+
         <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Saved</span></Link></li>
+        <span className="textMenu">Saved</span></li></Link>
+  <Link className="linkItem" to="/Subscriptions">
     <li className={props.active4 ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick4}>
-      <Link className="linkItem" to="/Subscriptions">
+
         <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Subscriptions</span></Link></li>
+        <span className="textMenu">Subscriptions</span></li></Link>
+    <Link className="linkItem" to="/Messages">
     <li className={props.active5 ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick5}>
-      <Link className="linkItem" to="/Messages">
         <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Messages</span></Link></li>
+        <span className="textMenu">Messages</span></li></Link>
+  <Link className="linkItem" to="/Settings">
     <li className={props.active6 ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick6}>
-      <Link className="linkItem" to="/Settings">
+
         <img className="logoHomeImg" src={logoHome} alt=""/>
-        <span className="textMenu">Settings</span></Link></li>
+        <span className="textMenu">Settings</span></li></Link>
   </>;
 }

@@ -1,5 +1,5 @@
 export default function Explore (){
   return (
-    <div>hello, i'm Explore</div>
+    <div><div><div><div></div></div></div>hello, i'm Explored</div>
   );
 }
