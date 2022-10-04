@@ -9,11 +9,6 @@ import news2 from "./img/Mask Group2.svg"
 import news3 from "./img/maskgroup3.svg"
 
 import clock from "./img/CLOCK.svg"
-import img1 from "./img/cart1.svg"
-import img2 from "./img/cart2.svg"
-import img3 from "./img/cart3.svg"
-
-import Fox from "./img/logo.svg"
 
 
 
