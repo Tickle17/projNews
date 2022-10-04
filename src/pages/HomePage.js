@@ -1,4 +1,3 @@
-// import "./styles.css";
 import Sviper from "../slider";
 import SviperToday from "../todaySlider";
 import SviperFeatured from "../featuredSlider";
