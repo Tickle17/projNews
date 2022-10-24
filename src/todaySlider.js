@@ -43,7 +43,7 @@ export default function SviperToday(){
                 </div>
               </div>
               <div className="source" style={{justifyContent:"space-between",display:"flex",marginTop:"11px"}}>
-                <div style={{borderRadius:"5px",backgroundColor:"rgba(80, 62, 157, 0.1)", height:"24px", width:"72px",fontSize:"11px",paddingTop:"7px",boxShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)"}}><span style={{paddingTop:"10px"}}>ABC NEWS</span></div>
+                <div style={{borderRadius:"5px",backgroundColor:"rgba(80, 62, 157, 0.1)", height:"24px", width:"72px",fontSize:"11px",paddingTop:"7px",boxShadow:"0px 2px 2px rgba(0, 0, 0, 0.25)"}}><span style={{paddingTop:"10px"}}>ABC NEWS</span></div>
                 <div style={{display:"flex"}}>
                   <img style={{height:"13.71px", width:"13.71px"}} src={clock} alt=""/>
                   <span>2:00 pm</span>

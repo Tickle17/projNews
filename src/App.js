@@ -24,8 +24,7 @@ import logoMenu from "./img/Buttons.svg"
 import searchIMG from "./img/Search.svg"
 
 import * as PropTypes from "prop-types";
-
-
+import DropDownMenu from "./newsApi/DropDownMenuSelectLanguage";
 
 
 
@@ -47,7 +46,7 @@ PagesActive.propTypes = {
 
 export default function App() {
 
-    const [active, setActive] = useState(true)
+    const [active, setActive] = useState(false)
     const [active2, setActive2] = useState(false)
     const [active3, setActive3] = useState(false)
     const [active4, setActive4] = useState(false)
@@ -56,10 +55,12 @@ export default function App() {
 
   return (
     <div className="bodyBG">
+      {/*Navigation menu*/}
       <div className="leftMenu">
         <img className="logoTop" src={logo} alt=""/>
         <ul className="pages">
-          <PagesActive active={active} onClick={() => {
+          <PagesActive
+            active={active} onClick={() => {
               {setActive(!active)}
               {setActive2(false)}
               {setActive3(false)}
@@ -68,7 +69,7 @@ export default function App() {
               {setActive6(false)}
             }
           }
-                       active2={active2} onClick2={() => {
+            active2={active2} onClick2={() => {
             {setActive2(!active)}
             {setActive(false)}
             {setActive3(false)}
@@ -77,7 +78,7 @@ export default function App() {
             {setActive6(false)}
           }
           }
-                       active3={active3} onClick3={() => {
+            active3={active3} onClick3={() => {
             {setActive3(!active)}
             {setActive2(false)}
             {setActive(false)}
@@ -86,7 +87,7 @@ export default function App() {
             {setActive6(false)}
           }
           }
-                       active4={active4} onClick4={() => {
+            active4={active4} onClick4={() => {
             {setActive4(!active)}
             {setActive2(false)}
             {setActive3(false)}
@@ -95,7 +96,7 @@ export default function App() {
             {setActive6(false)}
           }
           }
-                       active5={active5} onClick5={() => {
+            active5={active5} onClick5={() => {
             {setActive5(!active)}
             {setActive2(false)}
             {setActive3(false)}
@@ -104,7 +105,7 @@ export default function App() {
             {setActive6(false)}
           }
           }
-                       active6={active6} onClick6={() => {
+            active6={active6} onClick6={() => {
             {setActive6(!active)}
             {setActive2(false)}
             {setActive3(false)}
@@ -117,12 +118,12 @@ export default function App() {
             className="textMenu">Logout</span></Link></li>
         </ul>
       </div>
+      {/*Header + routes*/}
       <div className="mainBody">
         <div className="header">
           <div className="sort">
             <img className="logoHeaderIMG" src={logoLoc} alt=""/>
-            <div className="textHeaderSort">San Francisco, California</div>
-            <img className="optionsIMG" src={options} alt=""/>
+            <DropDownMenu ></DropDownMenu>
             <img className="logoHeaderIMG" src={logoAnalys} alt=""/>
             <div className="textHeaderSort">Analysis</div>
             <img className="optionsIMG" src={options} alt=""/>
@@ -150,8 +151,6 @@ export default function App() {
           <Route path="/Logout" element={<Logout/>}/>
         </Routes>
         </div>
-
-
       </div>
     </div>
   )}

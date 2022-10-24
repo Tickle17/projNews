@@ -61,7 +61,7 @@ export default function Sviper(){
           <div style={{height:"80px"}}>
             <img style={{display:"block", maxHeight:'55px',maxWidth:"80px",margin:"36px",}} src={JAZEERA} alt=""/>
           </div >
-          <div style={{display:"block", height:"24px",marginBottom:"16px"}}>AL JAZEERA</div>
+          <div style={{display:"block", height:"24px",marginBottom:"16px", marginTop:"13px"}}>AL JAZEERA</div>
         </div>
       </SwiperSlide>
       <SwiperSlide style={{borderRadius:"10px"}}>

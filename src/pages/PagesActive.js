@@ -4,14 +4,14 @@ import React from "react";
 
 export default function PagesActive(props) {
   return <>
-    <Link className="linkItem"  to="/home">
+  <Link className="linkItem"  to="/home">
       <li className={props.active ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick}>
         <img className="logoHomeImg" src={logoHome} alt=""/>
           <span className="textMenu">Home</span>
 
     </li>
   </Link>
-    <Link className="linkItem"to="/Explore">
+  <Link className="linkItem"to="/Explore">
       <li className={props.active2 ? "homePadActive " + "homePad" : "homePad" } onClick={props.onClick2}>
           <img className="logoHomeImg" src={logoHome} alt=""/>
             <span className="textMenu">Explore</span></li></Link>
@@ -25,7 +25,7 @@ export default function PagesActive(props) {
 
         <img className="logoHomeImg" src={logoHome} alt=""/>
         <span className="textMenu">Subscriptions</span></li></Link>
-    <Link className="linkItem" to="/Messages">
+  <Link className="linkItem" to="/Messages">
     <li className={props.active5 ? "homePadActive " + "homePad" : "homePad"} onClick={props.onClick5}>
         <img className="logoHomeImg" src={logoHome} alt=""/>
         <span className="textMenu">Messages</span></li></Link>
